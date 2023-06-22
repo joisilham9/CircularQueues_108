@@ -37,6 +37,7 @@ public:
 		}
 		queue_array[REAR] = num;
 	}
+
 	void remove() {
 		//cek apakah antrian kosong
 		if (FRONT == -1) {
@@ -99,6 +100,12 @@ int main() {
 		try {
 			cout << "menu" << endl;
 			cout << "1. Implement inset operation" << endl;
+			cout << "2. Implement delete operatio" << endl;
+			cout << "3. Display values" << endl;
+			cout << "4.exit" << endl;
+			cout << "enter your choice (1-4) :  ";
+			cin >> ch;
+			cout << endl;
 		}
 	}
 
