@@ -81,16 +81,24 @@ public:
 			}
 			cout << endl;
 		}
-		else {
-			//jika FRONT_position > REAR_position iterasi dari FRONT hingga akhir array
-			while (FRONT_position <= max - 1) {
-				cout << queue_array[FRONT_position] << "   ";
-				FRONT_position++;
-			}
-			cout << endl;
+		while (FRONT_position <= max - 1) {
+			cout << queue_array[FRONT_position] << " ";
+			FRONT_position++;
 		}
+		FRONT_position = 0;
+
+		//jika FRONT_position > REAR_position iterasi dari FRONT hingga akhir array
+		while (FRONT_position <= max - 1) {
+			cout << queue_array[FRONT_position] << "   ";
+			FRONT_position++;
+		}
+		cout << endl;
 	}
 };
+
+
+
+
 
 int main() {
 	Queues q;
@@ -110,18 +118,19 @@ int main() {
 			switch (ch) {
 			case '1': {
 				q.insert();
+				break;
 			}
 			case '2': {
 				q.remove();
 				break;
-			} 
+			}
 			case '3': {
 				q.display();
 				break;
-			} 
+			}
 			case '4': {
 				return 0;
-			} 
+			}
 			default: {
 				cout << "invalid optional" << endl;
 				break;
@@ -131,6 +140,6 @@ int main() {
 		catch (exception& e) {
 			cout << "check for the values entered" << endl;
 		}
-	} 
-	return 0 ;
-
+	}
+	return 0;
+} 
