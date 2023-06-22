@@ -86,6 +86,20 @@ public:
 				cout << queue_array[FRONT_position] << "   ";
 				FRONT_position++;
 			}
+			cout << endl;
 		}
 	}
 };
+
+int main() {
+	Queues q;
+	char ch;
+
+	while (true) {
+		try {
+			cout << "menu" << endl;
+			cout << "1. Implement inset operation" << endl;
+		}
+	}
+
+}
