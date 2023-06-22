@@ -121,7 +121,7 @@ int main() {
 			} 
 			case '4': {
 				return 0;
-			}
+			} 
 			default: {
 				cout << "invalid optional" << endl;
 				break;
